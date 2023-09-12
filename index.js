@@ -1,4 +1,4 @@
-// Define quiz/survey questions and answers as objects
+// Define quiz questions and answers as objects
 const questions = [
 	{
 		type: 'multiple-choice',
@@ -121,20 +121,20 @@ function checkAnswer(userAnswer) {
 		if (currentQuestionIndex < questions.length) {
 			displayQuestion(questions[currentQuestionIndex]);
 		} else {
-			alert('Quiz/survey completed!');
+			alert('Quiz completed!');
 		}
 	} catch (error) {
 		console.error('An error occurred:', error);
 	}
 }
 
-// Initialize the quiz/survey
+// Initialize the quiz
 displayQuestion(questions[currentQuestionIndex]);
 
 nextButton.addEventListener('click', () => {
 	if (currentQuestionIndex < questions.length) {
 		displayQuestion(questions[currentQuestionIndex]);
 	} else {
-		alert('Quiz/survey completed!');
+		alert('Quiz completed!');
 	}
 });
